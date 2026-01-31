@@ -5,8 +5,9 @@ const App = () => {
   <>
    <div className="h-screen w-full bg-gray-950 text-white" >
     <h1>Hello</h1>
-  </div>; </> 
+  </div> </> 
   )
 };
 
 export default App; 
+  
