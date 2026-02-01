@@ -1,30 +1,18 @@
 import React from "react";
 import { fetchPhotos, fetchVideos } from "./api/mediaApi";
+import SearchBar from "./Components/SearchBar";
 
 const App = () => {
 
 
   return (
-    <>
-      <div className="h-screen w-full bg-gray-950 text-white" >
-        <h1>Hello</h1>
-        <button onClick={async() => {
+    <>  
+    <div  className="h-screen text-white bg-gray-950" > 
+<SearchBar/>
+       
+    </div>
 
-          const data= await fetchPhotos("car")
-          console.log(data.results)
-          
-        }
-        } > Get Photos </button> 
-
-         <button onClick={async() => {
-
-          const data= await fetchVideos("car")
-          console.log(data.videos)
-          
-        }
-        } > Get Videos </button>
-
-      </div> </>
+    </>
   )
 };
 
